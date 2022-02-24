@@ -1,0 +1,86 @@
+@use '../base/root' as *;
+@use '../helpers/functions';
+@use '../helpers/mixins';
+
+.main {
+	--dark-gray: hsl(0, 0%, 100%);
+	place-self: center;
+	width: functions.em(320);
+	background-color: var(--dark-gray);
+	border-radius: functions.em(15);
+	@include mixins.desktop {
+		width: functions.em(360);
+	}
+	&__img {
+		width: 100%;
+		border-top-left-radius: functions.em(15);
+		border-top-right-radius: functions.em(15);
+	}
+	&__profile-img {
+		border-radius: 50%;
+		outline: 6px solid var(--dark-gray);
+		transform: translateY(-50%);
+	}
+	&__name,
+	&__list-followers-count,
+	&__list-likes-count,
+	&__list-photos-count {
+		font-size: functions.rem(18);
+		font-weight: functions.weight(bold);
+		color: var(--very-dark-desaturated-blue);
+	}
+	&__name,
+	&__city {
+		transform: translateY(-120%);
+	}
+	&__age {
+		font-weight: functions.weight(regular);
+		color: var(--dark-grayish-blue);
+		margin-left: 0.25em;
+	}
+	&__line {
+		--dark-gray: hsl(0, 0%, 90%);
+		margin: 0;
+		border: 0;
+		border-top: 1px solid var(--dark-gray);
+	}
+	&__list {
+		display: grid;
+		grid-template:
+			'followers-count likes-count photos-count'
+			'followers likes photos';
+		padding: 1.25em 1.5em 1.5em;
+		letter-spacing: 1px;
+		&-likes-count,
+		&-photos-count {
+			margin-left: -0.5em;
+		}
+		&-likes,
+		&-photos {
+			margin-left: -0.9em;
+		}
+		&-followers-count {
+			grid-area: followers-count;
+		}
+		&-likes-count {
+			grid-area: likes-count;
+		}
+		&-photos-count {
+			grid-area: photos-count;
+		}
+		&-followers,
+		&-likes,
+		&-photos {
+			font-size: functions.rem(11);
+		}
+		&-followers {
+			grid-area: followers;
+		}
+		&-likes {
+			grid-area: likes;
+		}
+		&-photos {
+			grid-area: photos;
+		}
+	}
+}

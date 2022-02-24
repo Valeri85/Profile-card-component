@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- 1) Characters and symbols -->
+		<meta charset="UTF-8" />
+		<!-- 2) Displays site properly based on user's device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- 3) Preload fonts -->
+		<link rel="preload" href="fonts/KumbhSans-Regular.woff2" type="font/woff2" as="font" crossorigin />
+		<link rel="preload" href="fonts/KumbhSans-Regular.woff" type="font/woff" as="font" crossorigin />
+		<link rel="preload" href="fonts/KumbhSans-Bold.woff2" type="font/woff2" as="font" crossorigin />
+		<link rel="preload" href="fonts/KumbhSans-Bold.woff" type="font/woff" as="font" crossorigin />
+		<!-- 4) Preload css -->
+		<link rel="preload" href="./css/style.min.css" as="style" />
+		<!-- 5) Title -->
+		<title>Frontend Mentor | Profile card component</title>
+		<!-- 6) Favicon -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<!-- 7) Author -->
+		<meta name="author" content="Valeri Makaridze" />
+		<!-- 8) Description -->
+		<meta name="description" content="Profile card component challenge on Frontend Mentor" />
+		<!-- 9) Keywords -->
+		<meta name="keywords" content="front-end mentor, Valeri Makaridze, Profile card, challenge" />
+		<!-- 10) Theme color -->
+		<meta name="theme-color" content="#19a2ae" />
+		<!-- 11) Facebook open graph -->
+		<meta property="og:title" content="Profile card component" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="Profile card component challenge on Frontend Mentor" />
+		<!-- <meta property="og:image" content="https://qr-code-component-frontend-mentor.netlify.app/screenshot.png" /> -->
+		<meta property="og:image:alt" content="Profile card component" />
+		<!-- <meta property="og:url" content="https://qr-code-component-frontend-mentor.netlify.app/" /> -->
+		<!-- 12) Twitter card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Profile card component" />
+		<meta name="twitter:description" content="Profile card component challenge on Frontend Mentor" />
+		<meta name="twitter:site" content="@Valeri79125128" />
+		<!-- <meta name="twitter:image" content="https://qr-code-component-frontend-mentor.netlify.app/screenshot.png" /> -->
+		<meta property="twitter:image:alt" content="Profile card component" />
+		<meta name="twitter:creator" content="@Valeri79125128" />
+		<!-- 13) Css -->
+		<!-- <link rel="stylesheet" href="./css/style.min.css" /> -->
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<!-- Card -->
+		<main class="main">
+			<img
+				class="main__img"
+				src="./images/bg-pattern-card.svg"
+				width="320"
+				height="128"
+				alt="Abstract azure blue neon bubbles background"
+			/>
+			<img class="main__profile-img" src="./images/image-victor.jpg" width="96" height="96" alt="Victor Crest" />
+			<h1 class="main__name">Victor Crest <span class="main__age">26</span></h1>
+			<p class="main__city">London</p>
+			<hr class="main__line" />
+			<dl class="main__list">
+				<dt class="main__list-followers-count">80K</dt>
+				<dd class="main__list-followers">Followers</dd>
+				<dt class="main__list-likes-count">803K</dt>
+				<dd class="main__list-likes">Likes</dd>
+				<dt class="main__list-photos-count">1.4K</dt>
+				<dd class="main__list-photos">Photos</dd>
+			</dl>
+		</main>
+		<!-- Footer -->
+		<footer class="footer">
+			<p class="footer__text">
+				Challenge by
+				<a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>.
+			</p>
+			<p class="footer__text">Coded by <a class="footer__link" href="#" target="_blank">Valeri</a>.</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+.footer {
+	margin-top: auto;
+	padding-top: 1em;
+	color: var(--very-dark-desaturated-blue);
+	text-align: center;
+	&__text {
+		display: inline-block;
+	}
+	&__link {
+		color: var(--very-dark-desaturated-blue);
+	}
+}

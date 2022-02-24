@@ -1,0 +1,14 @@
+@use '../base/root' as *;
+@use '../helpers/mixins';
+
+body {
+	display: grid;
+	background-color: var(--dark-cyan);
+	background-image: url(../../images/bg-pattern-top.svg), url(../../images/bg-pattern-bottom.svg);
+	background-repeat: no-repeat, no-repeat;
+	background-position: 130% 150%, -20% -70%;
+	text-align: center;
+	@include mixins.desktop {
+		background-position: -45% 200%, 125% -120%;
+	}
+}
