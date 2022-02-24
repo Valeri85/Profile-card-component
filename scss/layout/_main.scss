@@ -55,32 +55,44 @@
 		&-photos-count {
 			margin-left: -0.5em;
 		}
-		&-likes,
-		&-photos {
-			margin-left: -0.9em;
-		}
 		&-followers-count {
 			grid-area: followers-count;
+			grid-row: 1 / 2;
+			grid-column: 1 / 2;
 		}
 		&-likes-count {
 			grid-area: likes-count;
+			grid-row: 1 / 2;
+			grid-column: 2 / 3;
 		}
 		&-photos-count {
 			grid-area: photos-count;
+			grid-row: 1 / 2;
+			grid-column: 3 / 4;
 		}
 		&-followers,
 		&-likes,
 		&-photos {
 			font-size: functions.rem(11);
 		}
+		&-likes,
+		&-photos {
+			margin-left: -0.9em;
+		}
 		&-followers {
 			grid-area: followers;
+			grid-row: 2 / 3;
+			grid-column: 1 / 2;
 		}
 		&-likes {
 			grid-area: likes;
+			grid-row: 2 / 3;
+			grid-column: 2 / 3;
 		}
 		&-photos {
 			grid-area: photos;
+			grid-row: 2 / 3;
+			grid-column: 3 / 4;
 		}
 	}
 }
