@@ -21,12 +21,12 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/profile-card-component-W8qcq_3bM)
+-   Live Site URL: [Profile card component](https://profile-card-component-front-end-mentor.netlify.app/)
 
 ## My process
 
@@ -35,8 +35,9 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 -   Semantic HTML5 markup
 -   CSS custom properties
 -   Flexbox
--   CSS Grid
 -   Mobile-first workflow
+-   CSS Grid
+-   Note: Used place-self, grid-area declaration and grid-row for autoprefixer purposes.
 
 ### Useful resources
 
